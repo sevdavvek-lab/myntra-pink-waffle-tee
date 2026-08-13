@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+<meta name="theme-color" content="#ffffff">
+<title>Pink Waffle Knit T-Shirt</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#f5f5f6;color:#282c3f;font-family:Arial,Helvetica,sans-serif}
+.nav{height:64px;background:#fff;border-bottom:1px solid #e9e9e9;display:flex;align-items:center;padding:0 16px;gap:18px;position:sticky;top:0;z-index:2}
+.logo{font-weight:900;letter-spacing:1.5px;color:#ff3f6c;font-size:20px}
+.search{flex:1;background:#f5f5f6;border-radius:4px;padding:11px 13px;color:#777;font-size:13px}
+.icons{font-size:19px;display:flex;gap:15px}
+.crumb{max-width:900px;margin:14px auto 0;padding:0 16px;color:#7e818c;font-size:11px}
+.card{max-width:900px;margin:10px auto 30px;background:#fff;display:grid;grid-template-columns:55% 45%;min-height:620px}
+.gallery{background:#f7f7f7;display:flex;align-items:center;justify-content:center;min-height:620px;position:relative}
+.gallery:after{content:"";position:absolute;bottom:15px;left:15px;background:#fff;padding:6px 9px;font-size:10px;color:#666;border-radius:2px;box-shadow:0 1px 4px #ddd}
+.fakeimg{width:76%;height:76%;background:linear-gradient(135deg,#f0f0f0,#fafafa);display:flex;align-items:center;justify-content:center;color:#aaa;font-size:12px}
+.details{padding:30px 28px}
+.brand{font-size:20px;font-weight:700;margin-bottom:6px}
+.title{font-size:15px;color:#696e7c;margin-bottom:18px}
+.rating{display:inline-block;border:1px solid #ddd;padding:7px 10px;font-size:12px;margin-bottom:18px}
+.price{font-size:22px;font-weight:700}.tax{font-size:11px;color:#03a685;margin:5px 0 22px}
+.line{border-top:1px solid #eee;margin:20px 0}
+.label{font-size:12px;font-weight:700;margin-bottom:10px}
+.sizes{display:flex;gap:8px}.size{border:1px solid #ddd;border-radius:3px;padding:10px 14px;font-size:12px}
+.cta{width:100%;border:0;background:#ff3f6c;color:#fff;font-weight:700;padding:16px;border-radius:3px;margin-top:25px;font-size:14px}
+.wish{width:100%;background:#fff;border:1px solid #ddd;padding:14px;margin-top:10px;font-weight:700}
+.info{font-size:11px;color:#666;line-height:1.6;margin-top:18px}
+#reveal{display:none;position:fixed;inset:0;background:#fff;z-index:10;overflow:auto}
+.revealTop{height:58px;border-bottom:1px solid #eee;display:flex;align-items:center;padding:0 16px;font-weight:700}
+.revealBody{text-align:center;max-width:520px;margin:auto;padding:18px}
+.revealBody img{width:100%;max-height:72vh;object-fit:contain;border-radius:5px}
+.twist{font-size:25px;font-weight:800;margin:17px 0 7px}
+.note{color:#666;font-size:14px;line-height:1.5}
+.back{margin-top:18px;border:1px solid #ddd;background:#fff;padding:11px 20px;border-radius:3px;font-weight:700}
+@media(max-width:650px){
+ .nav{gap:10px}.search{font-size:12px}.icons{font-size:17px}
+ .card{display:block;margin-top:8px}.gallery{min-height:370px}.details{padding:24px 18px}
+ .crumb{margin-top:10px}.fakeimg{width:72%;height:75%}
+}
+</style>
+</head>
+<body>
+<header class="nav">
+  <div class="logo">STYLE</div>
+  <div class="search">Search for products, brands and more</div>
+  <div class="icons">♡ 🛍</div>
+</header>
+
+<div class="crumb">Home / Men / T-Shirts / Casual T-Shirts</div>
+
+<main class="card">
+  <section class="gallery">
+    <div class="fakeimg">Product image</div>
+  </section>
+
+  <section class="details">
+    <div class="brand">Men's Pink Waffle Knit T-Shirt</div>
+    <div class="title">Regular fit • Casual • Soft knit</div>
+    <div class="rating">★ 4.4 &nbsp; | &nbsp; 1.2k Ratings</div>
+
+    <div class="price">₹799 <span style="font-size:12px;color:#999;font-weight:400"> MRP incl. of all taxes</span></div>
+    <div class="tax">Get it delivered to your location</div>
+
+    <div class="line"></div>
+    <div class="label">SELECT SIZE</div>
+    <div class="sizes"><div class="size">S</div><div class="size">M</div><div class="size">L</div><div class="size">XL</div></div>
+
+    <button class="cta" onclick="reveal()">VIEW PRODUCT</button>
+    <button class="wish">♡ ADD TO WISHLIST</button>
+
+    <div class="line"></div>
+    <div class="info"><b>PRODUCT DETAILS</b><br>Waffle texture • Short sleeves • Crew neck • Regular fit</div>
+  </section>
+</main>
+
+<div id="reveal">
+  <div class="revealTop"><span style="color:#ff3f6c">STYLE</span><span style="margin-left:auto">♡</span></div>
+  <div class="revealBody">
+    <img src="photo.jpg" alt="Surprise">
+    <div class="twist">Plot twist 👀❤️</div>
+    <div class="note">You thought this was a T-shirt link.</div>
+    <button class="back" onclick="document.getElementById('reveal').style.display='none'">BACK TO PRODUCT</button>
+  </div>
+</div>
+
+<script>
+function reveal(){document.getElementById('reveal').style.display='block';window.scrollTo(0,0)}
+</script>
+</body>
+</html>
